@@ -1,13 +1,16 @@
  
 import mysql.connector
 from mysql.connector import Error
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 try:
     # Establish the connection to the MySQL server
     dataBase = mysql.connector.connect(
         host='localhost',
-        user='root',
-        passwd='1234567*('  # Replace with your MySQL root password
+        user=os.getenv('DB_USER'),
+        passwd=os.getenv('DB_PASS') # Replace with your MySQL root password
     )
 
     if dataBase.is_connected():

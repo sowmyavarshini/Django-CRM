@@ -1,0 +1,59 @@
+ECHO is on.
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Django stuff:
+*.log
+*.sqlite3
+db.sqlite3
+
+# Environment variables
+.env
+
+# Static files
+/static/
+media/
+
+# IDE or Editor files
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Python virtual environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Test and coverage reports
+coverage/
+*.cover
+*.coverage
+nosetests.xml
+coverage.xml
+*.log
+*.pot
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest
+.cache
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Local development files
+local_settings.py
